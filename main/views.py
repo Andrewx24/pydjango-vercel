@@ -11,6 +11,10 @@ def hello_world(request):
 def home(request):
     return Response({"message": "Hello from Django!"})
 
+
+def home(request):
+    return render(request, 'home.html')  # You'll need to create home.html template
+
 # Option 2: If you want to render an HTML template
 # def home(request):
 #     return render(request, 'home.html')  # You'll need to create home.html template
